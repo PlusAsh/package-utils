@@ -1,0 +1,22 @@
+{
+    "name": "ashley-hardy/utilities",
+    "description": "Common utilities and helpers across other AshleyHardy components and repositories.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AshleyHardy\\Utilities\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ashley Hardy",
+            "email": "a.hardy@h4rdy.co.uk"
+        }
+    ],
+    "require": {
+        "ramsey/uuid": "^4.7"
+    }
+}
