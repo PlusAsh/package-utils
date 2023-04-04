@@ -54,4 +54,18 @@ class Str
     {
         return ucfirst($string);
     }
+
+    private static function tokenKey(string|int $key): string
+    {
+        if(is_int($key)) return '{' . $key . '}';
+        return "{{ $key }}";
+    }
+
+    public static function tokenise(string $string, array $tokens = []): string
+    {
+        foreach($tokens as $key => $value) {
+            $string = str_replace(self::tokenKey($key), $value, $string);
+        }
+        return $string;
+    }
 }
