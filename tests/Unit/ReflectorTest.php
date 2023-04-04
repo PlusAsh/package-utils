@@ -1,7 +1,6 @@
 <?php
 
 use AshleyHardy\Utilities\Reflect;
-use AshleyHardy\Utilities\Reflector;
 
 function testClass(): object
 {
